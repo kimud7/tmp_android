@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/teal_200">
+
+    <ImageView
+        android:id="@+id/Img_Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginLeft="181dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/emblem" />
+
+    <ImageView
+        android:id="@+id/Img_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Img_Logo"
+        app:srcCompat="@drawable/title_logo" />
+
+    <ImageView
+        android:id="@+id/Img_Intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Img_Title"
+        app:srcCompat="@drawable/messaging_left" />
+
+    <Button
+        android:id="@+id/Btn_signup"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="204dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="102dp"
+        android:text="SignUp"
+        app:backgroundTint="#00FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Img_Intro" />
+
+    <Button
+        android:id="@+id/Btn_Signin"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="204dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:text="SignIn"
+        app:backgroundTint="#00FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Img_Intro" />
+
+    <ImageView
+        android:id="@+id/img_signup_orangebar"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_signup"
+        app:srcCompat="@drawable/login_orangebar" />
+
+    <ImageView
+        android:id="@+id/img_signin_orangebar"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_Signin"
+        app:srcCompat="@drawable/login_orangebar" />
+
+    <FrameLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="415dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_signup_orangebar">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
