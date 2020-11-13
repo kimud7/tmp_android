@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login">
         <activity
-            android:name=".LoginActivity"/>
+            android:name=".IntroActivity"/>
         <activity
             android:name=".SignupActivity"/>
         <activity android:name=".MainActivity2"/>
-        <activity android:name=".IntroActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
